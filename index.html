@@ -1,0 +1,75 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+
+    <section class="add">
+    <div class="input-group form ">
+                <h1 class="text">Enter text into the input field to add items to your list.</h1>
+            <input type="text" id="new_item" class="form-control" placeholder="New Item..." >
+          <button onclick="add()" type="button" class="btn mx-5 btn-warning">Success</button>
+        </div>
+        
+<div class="container">
+        <table class="table table-striped table-hover w-75 m-5">
+    
+         <tbody id="tableBody">
+            </tbody>
+    
+    
+       </table>
+        
+        </div>
+    </section>
+    <section class="valid">
+        
+    <form>
+        
+  <div class="form-group">
+    <label>User Name</label>
+    <input onblur="ValidateUserName()" id="userName" class="form-control" id="exampleInputEmail1" placeholder="Enter User Name">
+      <div id="alertName" class="alert alert-danger  mt-2">entre valid username</div>
+  </div>
+        
+  <div class="form-group">
+    <label>Email Address</label>
+    <input  id="userEmail"  class="form-control"  placeholder="Enter Email">
+            <div id="alertemail" class="  alert-danger alertEmail mt-2">entre valid email</div>
+
+  </div>
+        
+  <div class="form-group">
+    <label>Phone</label>
+    <input  id="userPhone" class="form-control" placeholder="Enter Phone">
+            <div id="alertphone" class="alert alert-danger  alertPhone mt-2">entre valid phone</div>
+
+  </div>
+        
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input  class="form-control mess " placeholder="Enter Message">
+  </div>
+        
+        
+  <button type="submit" class="btn submit btn-primary">Submit</button>
+</form>
+    
+    
+    </section>
+    
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/mine.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+</body>
+
+
+
+
+
+
+
+</html>
